@@ -25,6 +25,8 @@ export default function SignUpFormContainer() {
 function SignUpForm(props) {
   const { isSubmitting, errors, handleChange, handleSubmit } = props
 
+  console.log(errors);
+  
   return (
     <div className="form">
       <label className="form-field" htmlFor="email">
