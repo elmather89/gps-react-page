@@ -18,15 +18,13 @@ footer {
     color: rgba(255,255,255,.6);
 	padding-bottom: 6rem;
 	text-align: center;
-    /* background: #3E6A7A;
-	color: #000;
-    position: absolute;
-	width: 110%;
-	bottom:-15%;
-	left: -5%;
-	transform:rotate(2deg); */
-    /* bottom: 0px;
-	margin: -70px -50px 0 -50px;
-	padding: 70px 0 50px;
-	text-align: center; */
+}
+
+a {
+	color: whitesmoke;
+}
+
+a:hover {
+	color: rgb(172, 172, 172);
+	text-decoration-line: none;
 }
