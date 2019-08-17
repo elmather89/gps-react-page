@@ -1,21 +1,22 @@
 import { MIN_PASSWORD_LENGTH } from './const'
+import { isParenthesizedExpression } from '@babel/types';
 
 export default function getSpectedValidationSchema(values) {
   return {
     email: [
       [value => !isEmpty(value), 'E-mail is required!'],
-      [value => isEmail(value), 'E-mail is not valid!'],
+      [value => isEmail(value), 'E-mail is not valid!']
     ],
-    password: [
-      [value => !isEmpty(value), 'Password is required!'],
+    name: [
+      [value => !isEmpty(value), 'Name is required!'],
       [
         value => value.length >= MIN_PASSWORD_LENGTH, 
-        `Password has to be longer than ${MIN_PASSWORD_LENGTH} characters!` 
-      ],
+        `Name must be longer than ${MIN_PASSWORD_LENGTH} character!` 
+      ]
     ],
-    passwordConfirmation: [
-      [value => !isEmpty(value), 'Password confirmation is required!'],
-      [value => value === values.password, 'Passwords are not the same!'],
+    zip: [
+      [value => !isEmpty(value), 'Zip code is required!'],
+      [value => isZip(value), 'Zip code is not valid!']
     ],
     consent: [
       [value => value === true, 'You have to agree with our Terms and Conditions!'],
@@ -30,4 +31,9 @@ function isEmpty(value) {
 function isEmail(value) {
   const EMAIL_REGEXP = /([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}/
   return EMAIL_REGEXP.test(value)
+}
+
+function isZip(value) {
+  const ZIP_REGEXP = /^\d{5}(?:[-\s]\d{4})?$/
+  return ZIP_REGEXP.test(value)
 }

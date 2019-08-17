@@ -5,7 +5,7 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg">
       <a className="navbar-brand" href="/">
-        GPS React App
+        <h1>GPS React App</h1>
       </a>
     </nav>
   );

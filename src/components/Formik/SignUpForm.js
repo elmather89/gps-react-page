@@ -5,9 +5,9 @@ import getValidationSchema from './getValidationSchema-spected'
 import './SignUpForm.css'
 
 const initialValues = {
+  name: '',
   email: '',
-  password: '',
-  passwordConfirmation: '',
+  zip: '',
   consent: false,
 }
 
@@ -23,29 +23,29 @@ export default function SignUpFormContainer() {
 }
 
 function SignUpForm(props) {
-  const { isSubmitting, errors, handleChange, handleSubmit } = props
+  const { isSubmitting, errors, handleChange, handleSubmit } = props;
 
-  console.log(errors);
+  // console.log(errors);
   
   return (
     <div className="form">
+      <label className="form-field" htmlFor="name">
+        <span>Name:</span>
+        <input name="name" type="name" onChange={handleChange} />
+      </label>
+      <div className="form-field-error">{errors.name}</div>
+
       <label className="form-field" htmlFor="email">
-        <span>E-mail:</span>
+        <span>Email:</span>
         <input name="email" type="email" onChange={handleChange} />
       </label>
       <div className="form-field-error">{errors.email}</div>
 
-      <label className="form-field" htmlFor="password">
-        <span>Password:</span>
-        <input name="password" type="password" onChange={handleChange} />
+      <label className="form-field" htmlFor="zip">
+        <span>Zip:</span>
+        <input name="zip" type="email" onChange={handleChange} />
       </label>
-      <div className="form-field-error">{errors.password}</div>
-
-      <label className="form-field" htmlFor="passwordConfirmation">
-        <span>Confirm password:</span>
-        <input name="passwordConfirmation" type="password" onChange={handleChange} />
-      </label>
-      <div className="form-field-error">{errors.passwordConfirmation}</div>
+      <div className="form-field-error">{errors.zip}</div>
 
       <label className="form-field" htmlFor="consent">
         <span>Consent:</span>
@@ -59,8 +59,7 @@ function SignUpForm(props) {
 }
 
 function onSubmit(values, { setSubmitting, setErrors }) {
-  setTimeout(() => {
-    console.log('User has been sucessfully saved!', values)
-    setSubmitting(false)
-  }, 2000)
+  
+    console.log('User has been sucessfully saved!', values);
+    
 }

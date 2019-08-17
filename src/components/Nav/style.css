@@ -1,7 +1,15 @@
 .navbar {
     background-color: #3E6A7A;
+    padding: 8px 35px 8px 35px;
 }
 
 .navbar-brand {
     color: whitesmoke;
+    font-family: 'EB Garamond', serif;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+    color: rgb(192, 192, 192);
 }

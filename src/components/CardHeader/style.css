@@ -1,0 +1,11 @@
+.card-header {
+    clear: both;
+    text-align: center;
+    height: auto;
+    border-bottom: 6px solid rgba(62, 106, 122, 0.452);
+    background-color: rgba(62, 106, 122, 0.459);
+    font-family: 'EB Garamond', serif;
+    font-size: 26px;
+    padding: 2px;
+    margin-bottom: 12px;
+}

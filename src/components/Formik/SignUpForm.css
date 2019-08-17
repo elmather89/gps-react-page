@@ -1,14 +1,14 @@
 .form {
+  flex-direction: column;
+  /* align-items: flex-end;
   display: flex;
   width: 20em;
-  margin: 0 auto;
-  flex-direction: column;
-  align-items: flex-end;
+  margin: 0 auto; */
 }
 
-.form-field {
+/* .form-field {
   margin: 1em;
-}
+} */
 
 .form-field-error {
   margin-right: 1em;
@@ -23,4 +23,24 @@ label span {
 button {
   align-self: center;
   margin: 1em;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #3E6A7A;
+  color: whitesmoke;
+}
+
+input {
+  width: 100%;
+  padding: 4px 4px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid rgba(62, 106, 122, 0.452);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  background-color: rgba(62, 106, 122, 0.452);
 }

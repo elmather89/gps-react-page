@@ -1,0 +1,32 @@
+/* .footer-cont {
+    background: #3E6A7A;
+} */
+
+.foot-inner {
+	margin-top: 100px;
+	color: whitesmoke;
+	/* transform: rotate(-1.5deg); */
+}
+
+footer {
+	position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #3E6A7A fixed no-repeat bottom left;
+    background-size: 100%;
+    clip-path: polygon(0 4vw,100% 0,100% 100%,0 100%);
+    color: rgba(255,255,255,.6);
+	padding-bottom: 6rem;
+	text-align: center;
+    /* background: #3E6A7A;
+	color: #000;
+    position: absolute;
+	width: 110%;
+	bottom:-15%;
+	left: -5%;
+	transform:rotate(2deg); */
+    /* bottom: 0px;
+	margin: -70px -50px 0 -50px;
+	padding: 70px 0 50px;
+	text-align: center; */
+}

@@ -1,12 +1,12 @@
 import React from "react";
+import './style.css';
 
 function Footer() {
   return (
     <footer>
-      <hr />
-      <p className="pull-right">
-        This is your footer
-      </p>
+      <div className="foot-inner">
+        <p>This is your footer</p>
+      </div>
     </footer>
   );
 }
