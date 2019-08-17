@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       <div className="foot-inner">
-        <a target="_blank" href="https://github.com/elmather89/gps-react-page">GitHub Link</a>
+        <a target="_blank" rel="noopener" href="https://github.com/elmather89/gps-react-page">GitHub Link</a>
       </div>
     </footer>
   );
