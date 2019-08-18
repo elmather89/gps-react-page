@@ -7,8 +7,7 @@ import './SignUpForm.css'
 const initialValues = {
   name: '',
   email: '',
-  zip: '',
-  consent: false,
+  zip: ''
 }
 
 export default function SignUpFormContainer() {
@@ -47,13 +46,7 @@ function SignUpForm(props) {
       </label>
       <div className="form-field-error">{errors.zip}</div>
 
-      <label className="form-field" htmlFor="consent">
-        <span>Consent:</span>
-        <input name="consent" type="checkbox" onChange={handleChange} />
-      </label>
-      <div className="form-field-error">{errors.consent}</div>
-
-      <button onClick={handleSubmit}>{isSubmitting ? 'Loading' : 'Sign Up'}</button>
+      <button type="submit" onClick={handleSubmit}>{isSubmitting ? 'Loading' : 'Sign Up'}</button>
     </div>
   )
 }

@@ -14,14 +14,17 @@ footer {
     overflow: hidden;
     background: #3E6A7A fixed no-repeat bottom left;
     background-size: 100%;
-    clip-path: polygon(0 4vw,100% 0,100% 100%,0 100%);
+    clip-path: polygon(0 6vw,100% 0,100% 100%,0 100%);
     color: rgba(255,255,255,.6);
-	padding-bottom: 6rem;
+	padding-bottom: 4rem;
 	text-align: center;
+    /* border-top-left-radius: 30%; */
+    /* border-top-right-radius: 50%; */
 }
 
 a {
-	color: whitesmoke;
+    color: whitesmoke;
+    font-size: 20px;
 }
 
 a:hover {

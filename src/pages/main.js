@@ -13,15 +13,22 @@ class Main extends Component {
                 <Row>
                     <Col size="sm-12 md-7 lg-9">
                         <Card>
-                            <CardHeader>Header</CardHeader>
-                            <Image src={MainImg} className="main-image" alt="beagle puppies for life" fluid/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Offendit eleifend moderatius ex vix, quem odio mazim et qui, purto expetendis cotidieque quo cu, veri persius vituperata ei nec. Qui gloriatur scribentur et, id velit verear mel, cum no porro debet. Offendit eleifend moderatius ex vix, quem odio mazim et qui, purto expetendis cotidieque quo cu, veri persius vituperata ei nec. Offendit eleifend moderatius ex vix, quem odio mazim et qui, purto expetendis cotidieque quo cu, veri persius vituperata ei nec. Scripta periculis ei eam, te pro movet reformidans. Scripta periculis ei eam, te pro movet reformidans. Pri posse graeco definitiones cu, id eam populo quaestio adipiscing, usu quod malorum te. Pri posse graeco definitiones cu, id eam populo quaestio adipiscing, usu quod malorum te. Scripta periculis ei eam, te pro movet reformidans. An dicant apeirian qui, at vide indoctum pro.
+                            <CardHeader><h2>About GPS</h2></CardHeader>
+                            <Image src={MainImg} className="main-image" alt="beagle puppies for life" fluid />
+                            <p>Doggo ipsum noodle horse doing me a frighten boofers dat tungg tho borkf stop it fren many pats, blop shooberino long water shoob blep you are doin me a concern. Fluffer corgo heckin angery woofer pats heckin I am bekom fat wow such tempt, the neighborhood pupper fluffer floofs shoob. Doge blep super chub extremely cuuuuuute wow such tempt fluffer pupperino pupper blep, bork waggy wags long doggo mlem maximum borkdrive much ruin diet smol.
+
+Such treat doing me a frighten shibe, many pats. <br></br>
+Smol heckin wow very biscit smol, heck aqua doggo. Doge woofer shoober, lotsa pats. I am bekom fat you are doing me a frighten aqua doggo blop waggy wags, big ol pupper shoob. Most angery pupper I have ever seen what a nice floof the neighborhood pupper pupper I am bekom fat extremely cuuuuuute, you are doin me a concern doggo long water shoob. Bork pupper big ol, heckin good boys. Pupperino heckin what a nice floof ruff heckin angery woofer, ruff h*ck. <br></br>Heckin extremely cuuuuuute shoob puggo noodle horse shibe shooberino long water shoob, heck fat boi smol borking doggo with a long snoot for pats puggo puggorino smol. Shibe long bois much ruin diet, long doggo.
+
+Length boy shoober length boy blop, such treat pupper.  pupper stop it fren.<br></br>
+You are doing me a frighten porgo smol borking doggo with a long snoot for pats fluffer you are doin me a concern, shooberino long woofer corgo. Borkdrive doggorino yapper floofs, doge. Clouds extremely cuuuuuute stop it fren maximum borkdrive vvv, puggo long woofer sub woofer h*ck borkdrive, long woofer boofers many pats. Dat tungg tho ruff doggo wrinkler, shoob. He made many woofs shoob smol tungg what a nice floof long bois doge, very jealous pupper smol borking doggo with a long snoot for pats extremely cuuuuuute heckin good boys shoob, tungg such treat clouds you are doing me a frighten porgo.
+
 </p>
                         </Card>
                     </Col>
                     <Col size="sm-12 md-5 lg-3">
                         <Card className="form-card">
-                            <CardHeader>Header</CardHeader>
+                            <CardHeader><h2>Join Us!</h2></CardHeader>
                             <Form />
                         </Card>
                     </Col>

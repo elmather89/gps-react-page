@@ -4,8 +4,14 @@
     height: auto;
     border-bottom: 6px solid rgba(62, 106, 122, 0.452);
     background-color: rgba(62, 106, 122, 0.459);
-    font-family: 'EB Garamond', serif;
+    font-family: 'IM Fell English', serif;
     font-size: 26px;
+    color: black;
     padding: 2px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+}
+
+.card-header h2 {
+    font-size: 22px;
+    margin-top: 15px;
 }

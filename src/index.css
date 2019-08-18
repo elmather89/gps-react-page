@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'EB Garamond', serif;
 }
 
 code {
@@ -21,6 +21,7 @@ code {
 }
 
 .main-image:hover {
+  opacity: 0.5;
   -webkit-filter: blur(4px);
   filter: blur(2px);
 }

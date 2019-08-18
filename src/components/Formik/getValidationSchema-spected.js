@@ -1,5 +1,5 @@
 import { MIN_PASSWORD_LENGTH } from './const'
-import { isParenthesizedExpression } from '@babel/types';
+// import { isParenthesizedExpression } from '@babel/types';
 
 export default function getSpectedValidationSchema(values) {
   return {
@@ -29,7 +29,7 @@ function isEmpty(value) {
 }
 
 function isEmail(value) {
-  const EMAIL_REGEXP = /([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}/
+  const EMAIL_REGEXP = /([\w\-_]+)?\w+@[\w-_]+(\w+){1,}/
   return EMAIL_REGEXP.test(value)
 }
 

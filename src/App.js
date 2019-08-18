@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from './components/Nav';
-import Form from './components/Formik/SignUpForm';
+// import Form from './components/Formik/SignUpForm';
 import Main from './pages/main';
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
