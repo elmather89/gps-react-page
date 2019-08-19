@@ -46,7 +46,7 @@ function SignUpForm(props) {
       </label>
       <div className="form-field-error">{errors.zip}</div>
 
-      <button type="submit" onClick={handleSubmit}>{isSubmitting ? 'Loading' : 'Sign Up'}</button>
+      <button type="submit" onClick={handleSubmit}>{isSubmitting ? 'Thank You!' : 'Sign Up'}</button>
     </div>
   )
 }
