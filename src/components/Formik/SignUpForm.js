@@ -1,8 +1,9 @@
-import React from 'react'
-import { Formik } from 'formik'
-import validate from './validate-spected'
-import getValidationSchema from './getValidationSchema-spected'
-import './SignUpForm.css'
+import React from 'react';
+import { Formik } from 'formik';
+import Spinner from 'react-bootstrap/Spinner';
+import validate from './validate-spected';
+import getValidationSchema from './getValidationSchema-spected';
+import './SignUpForm.css';
 
 const initialValues = {
   name: '',
@@ -46,7 +47,10 @@ function SignUpForm(props) {
       </label>
       <div className="form-field-error">{errors.zip}</div>
 
-      <button type="submit" onClick={handleSubmit}>{isSubmitting ? 'Thank You!' : 'Sign Up'}</button>
+      <button type="submit" onClick={handleSubmit}>{isSubmitting ? 
+      <Spinner as="span" animation="border" size="sm" role="status" aria-hidden="true" variant="light">
+        {/* <span className="sr-only">Submitted</span> */}
+      </Spinner> : 'Sign Up'}</button>
     </div>
   )
 }
