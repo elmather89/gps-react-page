@@ -2,7 +2,7 @@
   flex-direction: column;
   background-color: #3E6A7A;
   padding: 1.5em;
-  border-radius: 15px 0 15px 15px;
+  border-radius: 0 0 15px 15px;
   font-size: 20px;
 }
 
@@ -13,10 +13,6 @@
 .form-field span {
   color: whitesmoke;
 }
-
-/* .form-field {
-  margin: 1em;
-} */
 
 .form-field-error {
   margin-bottom: 1em;
@@ -31,6 +27,11 @@ label span {
 button {
   align-self: center;
   border-radius: 5px;
+  width: 100%;
+  padding: 4px 4px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 0.35em solid rgba(62, 106, 122, 0.452);
 }
 
 button:hover {
